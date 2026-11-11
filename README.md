@@ -46,7 +46,7 @@ Shared components, theme tokens and even the first screen live in `packages/`, s
 - 🖥️ Tauri 2 desktop shell for macOS, Windows and Linux
 - ⚛️ React Native 0.88 everywhere, rendered on desktop through react-native-web + Vite 8
 - 🎨 Uniwind + Tailwind CSS 4 with shared light/dark theme tokens
-- 🧩 Shared `@app/ui` (WelcomeScreen, Button) and `@app/shared` (typed API client, constants)
+- 🧩 Shared `@app/ui` (WelcomeScreen, Button) and `@app/shared` (platform-agnostic constants and logic)
 - 🪄 Optional: run Expo Web inside Tauri and drop Vite entirely
 - 📦 pnpm workspaces with a version catalog for React, React Native, Uniwind and friends
 - 🚢 GitHub Actions for CI and cross-platform Tauri releases, plus EAS build profiles
@@ -81,7 +81,7 @@ expo-tauri-uniwind/
 │       └── vite.config.ts     # rnw() + tailwindcss() + uniwind()
 ├── packages/
 │   ├── ui/                    # Shared RN components, WelcomeScreen, theme.css tokens
-│   └── shared/                # Platform-agnostic TS (API client, APP_NAME)
+│   └── shared/                # Platform-agnostic TS (APP_NAME)
 ├── assets/icon.svg            # App icon source
 ├── .github/workflows/         # CI + Tauri release
 └── pnpm-workspace.yaml        # Workspaces + version catalog

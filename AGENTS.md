@@ -5,7 +5,7 @@ This is a pnpm monorepo for one React Native app: Expo ships it to iOS, Android 
 - `apps/expo` — Expo SDK 58 + Expo Router. Has its own `AGENTS.md`; follow it for anything in that folder.
 - `apps/tauri` — Tauri 2 desktop shell. The frontend is Vite + react-native-web (`src/`); the Rust side lives in `src-tauri/`.
 - `packages/ui` (`@app/ui`) — shared React Native components and the theme tokens in `theme.css`.
-- `packages/shared` (`@app/shared`) — platform-agnostic TypeScript (API client, constants). No React Native imports.
+- `packages/shared` (`@app/shared`) — platform-agnostic TypeScript (constants, logic). No React Native imports.
 
 Workspace packages are consumed as TypeScript source (their `exports` point at `src/`), so there is no build step for them.
 
