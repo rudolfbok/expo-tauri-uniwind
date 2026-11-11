@@ -1,0 +1,36 @@
+{
+	"name": "@app/tauri",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc",
+		"tauri": "tauri",
+		"tauri:dev": "tauri dev",
+		"tauri:build": "tauri build"
+	},
+	"dependencies": {
+		"@app/shared": "workspace:*",
+		"@app/ui": "workspace:*",
+		"@tauri-apps/api": "^2.12.4",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"react-native": "catalog:",
+		"react-native-web": "catalog:",
+		"uniwind": "catalog:"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.3.5",
+		"@tauri-apps/cli": "^2.12.4",
+		"@types/node": "^26.6.6",
+		"@types/react": "catalog:",
+		"@types/react-dom": "~19.3.0",
+		"tailwindcss": "catalog:",
+		"typescript": "catalog:",
+		"vite": "^8.3.7",
+		"vite-plugin-rnw": "^0.0.13"
+	}
+}

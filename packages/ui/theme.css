@@ -1,0 +1,33 @@
+@source "./src";
+
+@theme {
+	--radius-ui: 10px;
+}
+
+@layer theme {
+	:root {
+		@variant light {
+			--color-background: #ffffff;
+			--color-foreground: #0a0a0b;
+			--color-muted: #f4f4f5;
+			--color-muted-foreground: #71717a;
+			--color-border: #e4e4e7;
+			--color-primary: #16a34a;
+			--color-primary-foreground: #ffffff;
+			--color-secondary: #dcfce7;
+			--color-secondary-foreground: #15803d;
+		}
+
+		@variant dark {
+			--color-background: #0a0a0b;
+			--color-foreground: #fafafa;
+			--color-muted: #18181b;
+			--color-muted-foreground: #a1a1aa;
+			--color-border: #27272a;
+			--color-primary: #16a34a;
+			--color-primary-foreground: #ffffff;
+			--color-secondary: #14532d;
+			--color-secondary-foreground: #86efac;
+		}
+	}
+}

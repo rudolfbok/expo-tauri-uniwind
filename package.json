@@ -1,0 +1,15 @@
+{
+	"name": "expo-tauri-uniwind",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev:tauri": "pnpm --filter @app/tauri tauri:dev",
+		"dev:expo": "pnpm --filter @app/expo start",
+		"build:tauri": "pnpm --filter @app/tauri tauri:build",
+		"typecheck": "pnpm --recursive typecheck"
+	},
+	"engines": {
+		"node": ">=26"
+	},
+	"packageManager": "pnpm@12.18.0"
+}
