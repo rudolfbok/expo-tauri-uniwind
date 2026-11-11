@@ -180,7 +180,7 @@ Notes:
 
 ### Sharing one codebase with `isTauri()`
 
-Inside the Tauri window, `@tauri-apps/api` reports that it's running in Tauri. Use that to branch config and features while sharing everything else:
+Inside the Tauri window, `Platform.OS` is `"web"`, the same as in a browser, so it can't tell desktop from web. `isTauri()` from `@tauri-apps/api` can. Use it to branch config and features while sharing everything else:
 
 ```bash
 pnpm --filter @app/expo add @tauri-apps/api
